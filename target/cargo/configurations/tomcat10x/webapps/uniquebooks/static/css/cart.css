@@ -1,0 +1,49 @@
+/* cart.css*/
+.cart-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+.cart-container h1{
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.quantity-input {
+    width: 60px;
+}
+.btn{
+    background: #0f172a;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkout-btn{
+    background: #10b981;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.message{
+    color: green;
+    text-align: center;
+    margin: 10px 0;
+}
+.error{
+    color: red;
+    text-align: center;
+}

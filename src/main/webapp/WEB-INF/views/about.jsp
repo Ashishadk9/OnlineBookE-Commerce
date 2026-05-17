@@ -136,13 +136,13 @@
          <div class="team-grid">
             <!--Team Member1-->
             <div class="team-card">
-                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team1.jpg" alt="Dev Raj Kandel" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
+                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team2.png" alt="Dev Raj Kandel" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
                 <div class="team-name">Dev Raj Kandel</div>
                 <div class="team-role">Founder & Lead</div>
             </div>
             <!--Team Member2-->
             <div class="team-card">
-                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team2.jpg" alt="Ashish Adhikari" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
+                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team1.png" alt="Ashish Adhikari" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
                 <div class="team-name">Ashish Adhikari</div>
                 <div class="team-role">UI/UX Designer</div>
             </div>
