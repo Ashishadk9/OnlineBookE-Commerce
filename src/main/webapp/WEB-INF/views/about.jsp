@@ -1,5 +1,5 @@
 <%----about.jsp---%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,25 +148,25 @@
             </div>
             <!--Team Member3-->
             <div class="team-card">
-                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team3.jpg" alt="Bimal Pandey " onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
+                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team2.png" alt="Bimal Pandey " onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book1.jpg'">
                 <div class="team-name">Bimal Pandey</div>
                 <div class="team-role">Content Creator</div>
             </div>
             <!--Team Member4-->
             <div class="team-card">
-                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team4.jpg" alt="Darshan Jung Kc" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
+                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team2.png" alt="Darshan Jung Kc" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book1.jpg'">
                 <div class="team-name">Darshan Jung Kc</div>
                 <div class="team-role">Manager</div>
             </div>
             <!--Team Member5-->
             <div class="team-card">
-                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team5.jpg" alt="Ashok Karki" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
+                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team2.png" alt="Ashok Karki" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book1.jpg'">
                 <div class="team-name">Ashok Karki</div>
                 <div class="team-role">Developer</div>
             </div>
             <!--Team Member6-->
             <div class="team-card">
-                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team6.jpg" alt="Samir Thapa" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book.png'">
+                <img class="team-image" src="${pageContext.request.contextPath}/static/images/team2.png" alt="Samir Thapa" onerror="this.src='${pageContext.request.contextPath}webapp/static/images/book1.jpg'">
                 <div class="team-name">Samir Thapa</div>
                 <div class="team-role">Software developer</div>
             </div>

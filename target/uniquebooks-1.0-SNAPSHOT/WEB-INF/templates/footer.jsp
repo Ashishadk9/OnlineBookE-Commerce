@@ -1,5 +1,5 @@
 <%----footer.jsp---%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
 <footer class="site-footer">
     <div class="footer-grid">

@@ -1,5 +1,5 @@
 <%----product.jsp---%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -152,10 +152,6 @@
         <div class="container">
             <%@ include file="/WEB-INF/templates/header.jsp" %>
 
-        <div class="page-header">
-            <h1> Featured Books</h1>
-            <p> Browse our collection of unique book titles</p>
-        </div>
             <!--Search Bar-->
             <div class="search-container">
                 <div class="search-wrapper">
@@ -163,6 +159,12 @@
                     <span class="search-icon"> </span>
                 </div>
             </div>
+
+        <div class="page-header">
+            <h1> Featured Books</h1>
+            <p> Browse our collection of unique book.</p>
+        </div>
+
             <div id="noResults" class="no-results"> 😔No matching books not found. </div>
 
             <div class="books-grid" id="booksGrid">

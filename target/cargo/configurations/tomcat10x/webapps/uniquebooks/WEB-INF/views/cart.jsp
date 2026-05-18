@@ -24,7 +24,8 @@
 
             <c:choose>
                 <c:when test="${empty sessionScope.cart or sessionScope.cart.size()==0}">
-                    <p>Your cart is empty. <a href="${pageContext.request.contextPath}/home">Continue shopping</a> </p>
+                    <p>Your cart is empty.
+                        <a href="${pageContext.request.contextPath}/home">Continue shopping</a> </p>
                 </c:when>
                 <c:otherwise>
                     <table>
@@ -48,7 +49,7 @@
                                     <form action="${pageContext.request.contextPath}/cart" method="post" style="display:inline;">
                                         <input type="hidden" name="action" value="update">
                                         <input type="hidden" name="bookId" value="${item.book.id}">
-                                        <input type="hidden" name="quantity" value="${item.quantity}" min="0" class="quantity-input" onchange="this.form.submit()">
+                                        <input type="number" name="quantity" value="${item.quantity}" min="1" class="quantity-input" onchange="this.form.submit()">
                                     </form>
                                 </td>
                                 <td>Rs. ${total}</td>

@@ -1,5 +1,5 @@
 <%----headeradmin.jsp---%>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <header class="admin-header">
     <div class="logo">
         <a href="${pageContext.request.contextPath}/admin/dashboard">

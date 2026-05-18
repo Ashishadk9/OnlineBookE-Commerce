@@ -49,7 +49,7 @@ public class CheckoutServlet extends HttpServlet {
         session.removeAttribute("cart");
 
         request.setAttribute("message", "Thank you for your checkout." + totalRequests +
-                " book requests have been submitted.");
+                " Book requests have been submitted.");
         request.getRequestDispatcher("/WEB-INF/views/cart.jsp").forward(request, response);
     }
 }
