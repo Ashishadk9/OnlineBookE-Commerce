@@ -18,6 +18,6 @@ public class CustomersServlet extends HttpServlet {
         throws ServletException, IOException{
         req.setAttribute("customers", userService.getAllUsers());
         // returns list of users with role='user'
-        req.getRequestDispatcher("/WEB-INF/views/admin/customers.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/admin/customers.jsp").forward(req, resp);
     }
 }

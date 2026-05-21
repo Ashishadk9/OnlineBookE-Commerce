@@ -17,7 +17,7 @@ public class OrdersServlet  extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
         throws ServletException, IOException{
         req.setAttribute("orders", orderDAO.findAll());
-        req.getRequestDispatcher("/WEB-INF/views/admin/orders.jsp") .forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/admin/orders.jsp") .forward(req, resp);
 
     }
 }

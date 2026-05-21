@@ -12,7 +12,7 @@
    <%@ include file="/WEB-INF/templates/headeradmin.jsp" %>
    <div class="admin-main">
     <jsp:include page="/WEB-INF/templates/sidebar.jsp">
-    <jsp: param name="page" value="settings"/>
+    <jsp:param name="page" value="settings"/>
     </jsp:include>
     <main class="content">
         <div class="table-card">
@@ -49,11 +49,11 @@
 
                         <div class="form-group">
                             <label>New Password</label>
-                            <input type="password" name="newPassword" value="${user.password}">
+                            <input type="password" name="newPassword" value="">
                         </div>
                         <div class="form-group">
                             <label>Confirm Password</label>
-                            <input type="password" name="confirmPassword" value="${user.confirmPassword}">
+                            <input type="password" name="confirmPassword" value="">
                         </div>
                     </div>
                     <button type="submit" class="save-btn">Save Changes</button>

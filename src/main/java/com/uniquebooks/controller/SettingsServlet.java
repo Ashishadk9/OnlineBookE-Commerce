@@ -21,7 +21,7 @@ public class SettingsServlet extends HttpServlet {
         throws ServletException, IOException{
         User admin=(User) SessionUtil.getAttribute(req, "user");
         req.setAttribute("admin",admin);
-        req.getRequestDispatcher("/WEB-INF/views/admin/settings.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/admin/settings.jsp").forward(req, resp);
     }
 
     @Override
@@ -42,7 +42,7 @@ public class SettingsServlet extends HttpServlet {
             admin.setPassword(PasswordUtil.hash(newPassword));
         }else {
             req.setAttribute("error", "Password do not match");
-            req.getRequestDispatcher("/WEB-INF/views/admin/settings.jsp"). forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/admin/settings.jsp"). forward(req, resp);
             return;
         }
     }
@@ -54,6 +54,6 @@ public class SettingsServlet extends HttpServlet {
         req.setAttribute("error", "Failed to update settings.");
     }
     req.setAttribute("admin", admin);
-    req.getRequestDispatcher("/WEB-INF/views/admin/settings.jsp") .forward(req, resp);
+    req.getRequestDispatcher("/WEB-INF/admin/settings.jsp") .forward(req, resp);
   }
 }

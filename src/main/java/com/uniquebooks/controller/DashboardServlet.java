@@ -13,7 +13,7 @@ import java.io.IOException;
 
 @WebServlet("/admin/dashboard")
 public class DashboardServlet  extends HttpServlet {
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         BookDAO bookDAO = new BookDAO();
         OrderDAO orderDAO = new OrderDAO();
@@ -25,6 +25,6 @@ public class DashboardServlet  extends HttpServlet {
         req.setAttribute("pendingUsers", userDAO.countPending());
         req.setAttribute("recentOrders", orderDAO.findRecent(4));
 
-        req.getRequestDispatcher("/WEB-INF/views/admin/dashboard.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/admin/dashboard.jsp").forward(req, resp);
     }
 }

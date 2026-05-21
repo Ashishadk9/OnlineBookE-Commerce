@@ -12,7 +12,7 @@
 <%@ include file="/WEB-INF/templates/headeradmin.jsp" %>
  <div class="admin-main">
     <jsp:include page="/WEB-INF/templates/sidebar.jsp">
-        <jsp: param name="page" value="dashboard"/>
+        <jsp:param name="page" value="dashboard"/>
     </jsp:include>
 
     <main class="content">

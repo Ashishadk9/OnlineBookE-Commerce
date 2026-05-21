@@ -28,6 +28,6 @@ public class ReportsServlet extends HttpServlet {
         req.setAttribute("pendingUsers", userDAO.countPending());
         req.setAttribute("orders",orderDAO.findAll());  //for detailed report table
 
-        req.getRequestDispatcher("/WEB-INF/views/admin/reports.jsp").forward(req, resp);
+        req.getRequestDispatcher("/WEB-INF/admin/reports.jsp").forward(req, resp);
     }
 }

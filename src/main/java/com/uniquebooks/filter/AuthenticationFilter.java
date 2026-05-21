@@ -28,7 +28,8 @@ public class AuthenticationFilter implements Filter {
         String path = request.getServletPath();
 
         // allow static resource and public pages
-        if (path.startsWith("/static") || path.equals("/login") || path.equals("/register")) {
+        if (path.startsWith("/static") || path.equals("/login") || path.equals("/register")
+        || path.equals("/home") || path.equals("/product") || path.equals("/about")) {
             chain.doFilter(req, resp);
             return;
         }

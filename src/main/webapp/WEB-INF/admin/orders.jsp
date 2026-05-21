@@ -12,7 +12,7 @@
      <%@ include file="/WEB-INF/templates/headeradmin.jsp" %>
      <div class="admin-main">
          <jsp:include page="/WEB-INF/templates/sidebar.jsp">
-             <jsp: param name="page" value="orders"/>
+             <jsp:param name="page" value="orders"/>
          </jsp:include>
          <main class="content">
              <div class="table-card">
@@ -36,7 +36,7 @@
                              <td>${order.orderNumber}</td>
                              <td>${order.customerName}</td>
                              <td>${order.orderDate}</td>
-                             <td>${order.totalamount}</td>
+                             <td>Rs. ${order.totalAmount}</td>
                              <td>
                                  <span class="status-badge status-${order.status}">
                                      ${order.status}

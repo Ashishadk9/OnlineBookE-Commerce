@@ -12,7 +12,7 @@
   <%@ include file="/WEB-INF/templates/headeradmin.jsp" %>
   <div class="admin-main">
       <jsp:include page="/WEB-INF/templates/sidebar.jsp">
-      <jsp: param name="page" value="manage books"/>
+      <jsp:param name="page" value="manage-books"/>
       </jsp:include>
 
       <main class="content">
@@ -33,13 +33,13 @@
                           <td>${book.title}</td>
                           <td>${book.author}</td>
                           <td>${book.isbn}</td>
-                          <td>${book.published}</td>
+                          <td>${book.publishedDate}</td>
                           <td>${book.genre}</td>
                           <td>Rs. ${book.price}</td>
                           <td class="action">
                               <a href="${pageContext.request.contextPath}../admin/view-book?id=${book.id}" class="view">View</a>
                               <a href="${pageContext.request.contextPath}../admin/edit-books?id=${book.id}" class="edit">Edit</a>
-                              <a href="${pageContext.request.contextPath}../admin/delete-book?id=${book.id}" class="delete"> onclick="return confirm('Delete this book?')">Delete</a>
+                              <a href="${pageContext.request.contextPath}../admin/delete-book?id=${book.id}" class="delete"></a>
                           </td>
                       </tr>
                   </c:forEach>
