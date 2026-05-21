@@ -289,8 +289,6 @@
                     </form>
                 </div>
             </div>
-            <!--Footer-->
-            <%@ include file="/WEB-INF/templates/footer.jsp"%>
         </div>
         <script>
             function filterBooks(){
@@ -315,5 +313,7 @@
                 noResults.style.display= visibleCount === 0 ? 'block' : 'none';
                 }
         </script>
+        <!--Footer-->
+        <%@ include file="/WEB-INF/templates/footer.jsp"%>
     </body>
 </html>

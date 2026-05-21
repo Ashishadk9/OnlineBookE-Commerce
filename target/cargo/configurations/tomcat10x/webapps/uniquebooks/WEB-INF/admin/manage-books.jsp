@@ -37,9 +37,9 @@
                           <td>${book.genre}</td>
                           <td>Rs. ${book.price}</td>
                           <td class="action">
-                              <a href="${pageContext.request.contextPath}../admin/view-book?id=${book.id}" class="view">View</a>
-                              <a href="${pageContext.request.contextPath}../admin/edit-books?id=${book.id}" class="edit">Edit</a>
-                              <a href="${pageContext.request.contextPath}../admin/delete-book?id=${book.id}" class="delete"></a>
+                              <a href="${pageContext.request.contextPath}WEB-INF/admin/view-book?id=${book.id}" class="view">View</a>
+                              <a href="${pageContext.request.contextPath}WEB-INF/admin/edit-books?id=${book.id}" class="edit">Edit</a>
+                              <a href="${pageContext.request.contextPath}WEB-INF/admin/delete-book?id=${book.id}" class="delete"></a>
                           </td>
                       </tr>
                   </c:forEach>
@@ -49,8 +49,8 @@
                   </tbody>
               </table>
           </div>
-          <%@include file="/WEB-INF/templates/footer.jsp"%>
       </main>
   </div>
+  <%@include file="/WEB-INF/templates/footer.jsp"%>
   </body>
 </html>

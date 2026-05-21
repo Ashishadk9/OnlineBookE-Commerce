@@ -40,7 +40,7 @@
             </div>
         </div>
     </main>
-       <%@include file="/WEB-INF/templates/footer.jsp"%>
    </div>
+   <%@include file="/WEB-INF/templates/footer.jsp"%>
   </body>
 </html>

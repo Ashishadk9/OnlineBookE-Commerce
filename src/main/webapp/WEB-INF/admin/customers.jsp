@@ -33,8 +33,9 @@
        </tbody>
       </table>
      </div>
-        <%@include file="/WEB-INF/templates/footer.jsp"%>
+
     </main>
 </div>
+<%@include file="/WEB-INF/templates/footer.jsp"%>
 </body>
 </html>
