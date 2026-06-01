@@ -4,7 +4,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-     <title>Approve-users</title>
+     <title>${empty book ? 'Add Book' : 'Edit Book'}</title>
      <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/admin-style.css">
      <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/footer.css">
     </head>
@@ -16,10 +16,12 @@
        </jsp:include>
        <main class="content">
           <div class="form-card">
-              <h1 class="page-title">Edit Book</h1>
-              <form action="${pageContext.request.contextPath}admin/manage-books" method="post" class="book-form">
-                  <input type="hidden" name="action" value="update"/>
-                  <input type="hidden" name="id" value="${book.id}"/>
+              <h1 class="page-title">${empty book ? 'Add New Book' : 'Edit Book'}</h1>
+              <form action="${pageContext.request.contextPath}/admin/books" method="post" class="book-form">
+                  <input type="hidden" name="action" value="${empty book ? 'add' : 'update'}"/>
+                  <c:if test="${not empty book}">
+                      <input type="hidden" name="id" value="${book.id}"/>
+                  </c:if>
                   
                   <div class="form-group">
                       <label>Book Title</label>
@@ -55,7 +57,7 @@
                   </div>
                   <div class="action-buttons">
                       <button type="submit" class="update-btn">Update Book</button>
-                      <a href="${pageContext.request.contextPath}/admin/manage-books" class="cancel-btn">Cancel</a>
+                      <a href="${pageContext.request.contextPath}/admin/books" class="cancel-btn">Cancel</a>
                   </div>
               </form>
           </div> 

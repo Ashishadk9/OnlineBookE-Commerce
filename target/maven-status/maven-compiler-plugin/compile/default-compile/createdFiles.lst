@@ -4,6 +4,7 @@ com/uniquebooks/dao/BookRequestDAO.class
 com/uniquebooks/dao/OrderDAO.class
 com/uniquebooks/utils/ValidationUtil.class
 com/uniquebooks/utils/PasswordUtil.class
+com/uniquebooks/entity/OrderItem.class
 com/uniquebooks/utils/SessionUtil.class
 com/uniquebooks/controller/SettingsServlet.class
 com/uniquebooks/controller/AboutServlet.class
@@ -19,6 +20,7 @@ com/uniquebooks/controller/DashboardServlet.class
 com/uniquebooks/service/BookService.class
 com/uniquebooks/controller/CheckoutServlet.class
 com/uniquebooks/utils/DatabaseConnection.class
+com/uniquebooks/controller/OrderDetailsServlet.class
 com/uniquebooks/filter/AuthenticationFilter.class
 com/uniquebooks/service/UserService.class
 com/uniquebooks/controller/LoginServlet.class

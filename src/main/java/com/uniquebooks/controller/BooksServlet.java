@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet("/admin/manage-books")
+@WebServlet("/admin/books")
 public class BooksServlet extends HttpServlet {
     private final BookService bookService=new BookService();
 
@@ -26,11 +26,11 @@ public class BooksServlet extends HttpServlet {
         } else if ("view".equals(action)) {
             int id=Integer.parseInt(req.getParameter("id"));
             req.setAttribute("book", bookService.findById(id));
-            req.getRequestDispatcher("/WEB-INF/admin/manage-books.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/admin/view-book.jsp").forward(req, resp);
         } else if ("delete".equals(action)) {
             int id=Integer.parseInt(req.getParameter("id"));
             bookService.deleteBook(id);
-            resp.sendRedirect(req.getContextPath()+"/admin/manage-books");
+            resp.sendRedirect(req.getContextPath()+"/admin/books");
         }else if ("add".equals(action)) {
             req.getRequestDispatcher("/WEB-INF/admin/edit-books.jsp").forward(req, resp);
         } else {

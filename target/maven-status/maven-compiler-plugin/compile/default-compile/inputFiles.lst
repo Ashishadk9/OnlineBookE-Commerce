@@ -8,6 +8,7 @@
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/HomeServlet.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/LoginServlet.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/LogoutServlet.java
+/Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/OrderDetailsServlet.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/OrdersServlet.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/ProductServlet.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/controller/RegisterServlet.java
@@ -19,6 +20,7 @@
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/dao/UserDAO.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/entity/Book.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/entity/Order.java
+/Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/entity/OrderItem.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/entity/User.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/filter/AuthenticationFilter.java
 /Users/aashishadhikari/Desktop/javaapt/OnlineBookE-Commerce/src/main/java/com/uniquebooks/model/CartItem.java

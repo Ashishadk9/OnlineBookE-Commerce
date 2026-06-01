@@ -42,7 +42,7 @@
                                      ${order.status}
                                  </span>
                              </td>
-                             <td><a href="#">View</a> </td>
+                             <td><a href="${pageContext.request.contextPath}/admin/order-details?id=${order.id}" class="view">View</a> </td>
                          </tr>
                      </c:forEach>
                      <c:if test="${empty orders}">

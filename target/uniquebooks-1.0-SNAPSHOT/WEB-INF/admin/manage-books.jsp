@@ -19,7 +19,7 @@
           <div class="table-card">
               <div class="table-header">
                   <h2>Manage Books</h2>
-                  <a href="#" class="add-btn">+ Add New Book</a>
+                  <a href="${pageContext.request.contextPath}/admin/books?action=add" class="add-btn">+ Add New Book</a>
               </div>
               <table class="data-table">
                   <thead>
@@ -37,9 +37,9 @@
                           <td>${book.genre}</td>
                           <td>Rs. ${book.price}</td>
                           <td class="action">
-                              <a href="${pageContext.request.contextPath}/admin/view-book?id=${book.id}" class="view">View</a>
-                              <a href="${pageContext.request.contextPath}/admin/edit-books?id=${book.id}" class="edit">Edit</a>
-                              <a href="${pageContext.request.contextPath}/admin/delete-book?id=${book.id}" class="delete"></a>
+                              <a href="${pageContext.request.contextPath}/admin/books?action=view&id=${book.id}" class="view">View</a>
+                              <a href="${pageContext.request.contextPath}/admin/books?action=edit&id=${book.id}" class="edit">Edit</a>
+                              <a href="${pageContext.request.contextPath}/admin/books?action=delete&id=${book.id}" class="delete" onclick="return confirm('Delete this book?')">Delete</a>
                           </td>
                       </tr>
                   </c:forEach>
