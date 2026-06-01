@@ -15,10 +15,10 @@
       </div>
 
         <a href="${pageContext.request.contextPath}/cart" class="cart-icon">
-            <img src="${pageContext.request.contextPath}/static/images/Icons.png" alt="Logout"></a>
+            <img src="${pageContext.request.contextPath}/static/images/Icons.png" alt="Cart"></a>
         <a href="${pageContext.request.contextPath}/admin/dashboard" class="admin-btn">Admin</a>
         <div class="user-area">
-            <span class="user-name">User</span>
+            <span class="user-name">${fullName}</span>
             <a href="${pageContext.request.contextPath}/logout" class="logout-icon">
                 <img src="${pageContext.request.contextPath}/static/images/Icon.png" alt="Logout"></a>
         </div>

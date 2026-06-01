@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
             SessionUtil.setAttribute(req,"user",user);
             SessionUtil.setAttribute(req,"role", user.getRole());
             SessionUtil.setAttribute(req,"userId", user.getId());
-            SessionUtil.setAttribute(req,"fulName", user.getFullName());
+            SessionUtil.setAttribute(req,"fullName", user.getFullName());
 
             if ("on".equals(remember)) {
                 CookieUtil.addCookie(resp,"remember_email",user.getEmail(), 7*24*60*60);
