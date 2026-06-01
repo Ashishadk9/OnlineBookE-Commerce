@@ -8,6 +8,8 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+// Add about servlet to forward  to about page
+
 @WebServlet("/about")
 public class AboutServlet extends HttpServlet {
 
@@ -16,4 +18,4 @@ public class AboutServlet extends HttpServlet {
         throws ServletException, IOException {
         req.getRequestDispatcher("/WEB-INF/views/about.jsp").forward(req, resp);
         }
-}
+    }
