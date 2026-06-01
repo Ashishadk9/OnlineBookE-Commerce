@@ -1,5 +1,7 @@
 package com.uniquebooks.entity;
 
+import java.sql.Timestamp;
+
 public class User {
     private int id;
     private String fullName;
@@ -8,6 +10,7 @@ public class User {
     private String phone;
     private String role;
     private String status;
+    private Timestamp createdAt;
 
     public User(){}
 
@@ -60,5 +63,11 @@ public class User {
     }
     public void setStatus(String status) {
         this.status = status;
+    }
+    public Timestamp getCreatedAt() {
+        return createdAt;
+    }
+    public void setCreatedAt(Timestamp createdAt) {
+        this.createdAt = createdAt;
     }
 }

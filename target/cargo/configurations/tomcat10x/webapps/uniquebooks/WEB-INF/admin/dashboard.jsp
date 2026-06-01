@@ -16,8 +16,10 @@
     </jsp:include>
 
     <main class="content">
-        <h1 class="page-title">Dashboard</h1>
-        <div class="stats-grid">
+
+        <div class="table-card">
+            <h1 class="page-title">Dashboard</h1>
+            <div class="stat-grid">
             <div class="stat-card">
                 <div class="stat-value">10</div>
                 <div class="stat-label">Total Books</div>
@@ -33,6 +35,7 @@
             <div class="stat-card">
                 <div class="stat-value">3</div>
                 <div class="stat-label">Pending Users</div>
+            </div>
             </div>
         </div>
 

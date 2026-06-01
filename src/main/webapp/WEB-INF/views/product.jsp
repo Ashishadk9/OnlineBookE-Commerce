@@ -69,7 +69,7 @@
                 color: #6b7280;
                 display: none;
             }
-            .books-grid{
+            .books-grid {
             display: grid;
                 grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
                 gap: 2rem;
@@ -94,12 +94,12 @@
                 object-fit: cover;
                 background: #f1f5f9;
             }
-            .book-title {
+            .data-title {
                 font-size: 1.2rem;
                 font-weight: 600;
                 margin: 0.8rem 0 0.2rem;
             }
-            .book-author {
+            .data-author {
                 color: #64748b;
                 font-size: 0.9rem;
                 margin-bottom: 0.3rem;
@@ -160,10 +160,10 @@
                 </div>
             </div>
 
-        <div class="page-header">
+         <div class="page-header">
             <h1> Featured Books</h1>
             <p> Browse our collection of unique book.</p>
-        </div>
+         </div>
 
             <div id="noResults" class="no-results"> 😔No matching books not found. </div>
 
@@ -171,8 +171,8 @@
                 <!--Book 1-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book1.jpg" alt="Think and Grow Rich"/>
-                    <div class="book-title">Think and Grow Rich</div>
-                    <div class="book-author">Napoleon Hill</div>
+                    <div class="data-title">Think and Grow Rich</div>
+                    <div class="data-author">Napoleon Hill</div>
                     <div class="price"><span class="old-price">Rs. 3,350</span> <span class="new-price">Rs. 2,350</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -183,8 +183,8 @@
                 <!--Book 2-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book2.jpg" alt="The Odyssey"/>
-                    <div class="book-title">The Odyssey</div>
-                    <div class="book-author">Emily Wilson</div>
+                    <div class="data-title">The Odyssey</div>
+                    <div class="data-author">Emily Wilson</div>
                     <div class="price"><span class="old-price">Rs. 2,100</span> <span class="new-price">Rs. 990</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -195,8 +195,8 @@
                 <!--Book 3-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book3.jpg" alt="Atomic Habits"/>
-                    <div class="book-title">Atomic Habits</div>
-                    <div class="book-author">James Clear</div>
+                    <div class="data-title">Atomic Habits</div>
+                    <div class="data-author">James Clear</div>
                     <div class="price"><span class="old-price">Rs. 2,000</span> <span class="new-price">Rs. 1,690</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -207,8 +207,8 @@
                 <!--Book 4-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book4.jpg" alt="Fundamentals of Data Engineering"/>
-                    <div class="book-title">Fundamentals of Data Engineering</div>
-                    <div class="book-author">Matt Housley</div>
+                    <div class="data-title">Fundamentals of Data Engineering</div>
+                    <div class="data-author">Matt Housley</div>
                     <div class="price"><span class="old-price">Rs. 3,000</span> <span class="new-price">Rs. 2,490</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -219,8 +219,8 @@
                 <!--Book 5-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book5.jpg" alt="The Correspondent"/>
-                    <div class="book-title">The Correspondent</div>
-                    <div class="book-author">Virginia Evans</div>
+                    <div class="data-title">The Correspondent</div>
+                    <div class="data-author">Virginia Evans</div>
                     <div class="price"><span class="old-price">Rs. 2,000</span> <span class="new-price">Rs. 1,390</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -231,8 +231,8 @@
                 <!--Book 6-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book6.jpg" alt="History Matters"/>
-                    <div class="book-title">History Matters</div>
-                    <div class="book-author">David McCullough</div>
+                    <div class="data-title">History Matters</div>
+                    <div class="data-author">David McCullough</div>
                     <div class="price"><span class="old-price">Rs. 3,000</span> <span class="new-price">Rs. 2,150</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -243,8 +243,8 @@
                 <!--Book 7-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book7.jpg" alt="The Second World War"/>
-                    <div class="book-title">The Second World War</div>
-                    <div class="book-author">Antony Beevor</div>
+                    <div class="data-title">The Second World War</div>
+                    <div class="data-author">Antony Beevor</div>
                     <div class="price"><span class="old-price">Rs. 2,000</span> <span class="new-price">Rs. 1,450</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -255,8 +255,8 @@
                 <!--Book 8-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book8.jpg" alt="Project Hail Mary"/>
-                    <div class="book-title">Project Hail Mary</div>
-                    <div class="book-author">Andy Weir</div>
+                    <div class="data-title">Project Hail Mary</div>
+                    <div class="data-author">Andy Weir</div>
                     <div class="price"><span class="old-price">Rs. 2,000</span> <span class="new-price">Rs. 1,190</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -267,8 +267,8 @@
                 <!--Book 9-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book9.jpg" alt="Red Rising"/>
-                    <div class="book-title">Red Rising</div>
-                    <div class="book-author">Pierce Brown</div>
+                    <div class="data-title">Red Rising</div>
+                    <div class="data-author">Pierce Brown</div>
                     <div class="price"><span class="old-price">Rs. 2,100</span> <span class="new-price">Rs. 1,550</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -279,8 +279,8 @@
                 <!--Book 10-->
                 <div class="book-card">
                     <img class="book-image" src="${pageContext.request.contextPath}/static/images/book10.jpg" alt="Ting Css Projects"/>
-                    <div class="book-title">Ting Css Projects</div>
-                    <div class="book-author">M. Dowden</div>
+                    <div class="data-title">Ting Css Projects</div>
+                    <div class="data-author">M. Dowden</div>
                     <div class="price"><span class="old-price">Rs. 2,500</span> <span class="new-price">Rs. 1,850</span></div>
                     <form action="${pageContext.request.contextPath}/cart" method="post">
                         <input type="hidden" name="action" value="add"/>
@@ -300,10 +300,12 @@
                 let visibleCount=0;
 
                 for (let i = 0; i < cards.length; i++) {
-                    let title = cards[i].getAttribute('data-title') || '';
-                    let author = cards[i].getAttribute('data-author') || '';
+                    let titleDiv = cards[i].querySelector('.data-title');
+                    let authorDiv = cards[i].querySelector('.data-author');
+                    let title = titleDiv ? titleDiv.innerText.toLowerCase() : '';
+                    let author = authorDiv ? authorDiv.innerText.toLowerCase() : '';
 
-                    if (title.toLowerCase().includes(filter) || author.toLowerCase().includes(filter)) {
+                    if (title.includes(filter) || author.includes(filter)) {
                         cards[i].style.display= '';
                         visibleCount++;
                     }else{

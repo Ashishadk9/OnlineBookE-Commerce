@@ -17,7 +17,7 @@
        <main class="content">
           <div class="form-card">
               <h1 class="page-title">Edit Book</h1>
-              <form action="${pageContext.request.contextPath}/admin/books" method="post" class="book-form">
+              <form action="${pageContext.request.contextPath}admin/manage-books" method="post" class="book-form">
                   <input type="hidden" name="action" value="update"/>
                   <input type="hidden" name="id" value="${book.id}"/>
                   
@@ -55,7 +55,7 @@
                   </div>
                   <div class="action-buttons">
                       <button type="submit" class="update-btn">Update Book</button>
-                      <a href="${pageContext.request.contextPath}/admin/books" class="cancel-btn">Cancel</a>
+                      <a href="${pageContext.request.contextPath}/admin/manage-books" class="cancel-btn">Cancel</a>
                   </div>
               </form>
           </div> 

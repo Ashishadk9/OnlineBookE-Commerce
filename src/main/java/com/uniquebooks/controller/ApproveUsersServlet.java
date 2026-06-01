@@ -27,7 +27,7 @@ public class ApproveUsersServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/admin/approve-users");
         } else {
             req.setAttribute("pendingList",userService.getPendingUsers() );
-            req.getRequestDispatcher("WEB-INF/admin/approve-users.jsp").forward(req, resp);
+            req.getRequestDispatcher("/WEB-INF/admin/approve-users.jsp").forward(req, resp);
         }
     }
 }

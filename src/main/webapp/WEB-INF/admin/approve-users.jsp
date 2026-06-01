@@ -1,6 +1,6 @@
 <%----approve-users.jsp---%>
 <%@taglib prefix="c" uri="jakarta.tags.core" %>
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,13 +24,13 @@
       <div class="pending-item">
             <div><strong>${u.fullName}</strong>
             <br>
-                <span style="font-size:0.8rem;">${u.email} Registered ${u.createdAt}</span>
+                <span style="font-size:0.8rem;">${u.email}</span>
             </div>
         <div>
-            <a href="${pageContext.request.contextPath}WEB-INF/admin/approveUsers? action=approve&id=${u.id}"
-               class="approve-btn"> Approve</a>
-            <a href="${pageContext.request.contextPath}WEB-INF//admin/approveUsers? action=reject&id=${u.id}"
-               class="reject-btn"> Reject</a>
+            <a href="${pageContext.request.contextPath}/admin/approve-users?action=approve&id=${u.id}"
+               class="approve-btn">Approve</a>
+            <a href="${pageContext.request.contextPath}/admin/approve-users?action=reject&id=${u.id}"
+               class="reject-btn">Reject</a>
         </div>
      </div>
     </c:forEach>
